@@ -7,7 +7,7 @@ namespace Pair_of_Amicable_Number
     {
         static void Main(string[] args)
         {
-            Mathsblib.Amicable(1, 10000);
+            Mathsblib.Amicable2(1, 10000);
             Console.Read();
         }
     }

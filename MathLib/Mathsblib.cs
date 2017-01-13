@@ -34,7 +34,7 @@ namespace MathLib
                         continue;
                     else
                         temp = sumA;
-                        Console.WriteLine(i + " - " + sumA);
+                        Console.WriteLine(i + " - " + sumB);
                 }
             }
         }
@@ -42,9 +42,12 @@ namespace MathLib
         public static void Amicable2(int min, int max)
         {
             int sumA = 0, sumB = 0, temp = 0;
-            int j=1, k=1;
+            int j=1;
             for(int i = min; i <= max; i++)
             {
+                sumA = 0;
+                sumB = 0;
+
                 while (j < i)
                 {
                     if (i % j == 0)
@@ -57,6 +60,7 @@ namespace MathLib
                 {
                     if (sumA % j == 0)
                         sumB += j;
+                    j++;
                 }
 
                 if (i == sumA)
