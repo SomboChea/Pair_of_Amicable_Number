@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Pair_of_Amicable_Number")]
+[assembly: AssemblyTitle("MathLib for SomboChea's Programs")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("MS Security System")]
-[assembly: AssemblyProduct("Pair_of_Amicable_Number")]
+[assembly: AssemblyProduct("Math Library")]
 [assembly: AssemblyCopyright("Copyright © SomboChea 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d1a62210-81ab-4081-8fb7-22d347d94c81")]
+[assembly: Guid("33fdf2e6-c948-4308-91bc-d0d64df320d8")]
 
 // Version information for an assembly consists of the following four values:
 //

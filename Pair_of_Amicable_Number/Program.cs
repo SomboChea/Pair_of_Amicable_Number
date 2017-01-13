@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MathLib;
 
 namespace Pair_of_Amicable_Number
 {
@@ -10,6 +7,8 @@ namespace Pair_of_Amicable_Number
     {
         static void Main(string[] args)
         {
+            Mathsblib.Amicable(1, 10000);
+            Console.Read();
         }
     }
 }
