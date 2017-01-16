@@ -76,6 +76,7 @@ namespace MathLib
 
         } //End method Amicable;
         
+        //Modulo for Amicable and Amicable2 ; this method like ModAmicable();
         public static long Modulo(int st_loop, long ed_loop)
         {
             long sum = 0;
@@ -117,8 +118,8 @@ namespace MathLib
         //Method for Amicable Numebr use WHILE LOOP and Show long result for detail;
         public static void Amicable2(int min, long max)
         {
-            long sumA = 0, sumB = 0;
-            long j=1;
+            int breakline = 0;
+            long sumA = 0, sumB = 0, j=1;
             for(int i = min; i <= max; i++)
             {
                 sumA = 0;
@@ -141,10 +142,16 @@ namespace MathLib
 
                 if (i == sumA)
                     continue;
-
+                
                 if (i == sumB)
                 {
-                   Console.WriteLine(i + " = " + checkMod(i) + " = " + sumA);
+                    if (breakline==2)
+                    {
+                        Console.Write("\n");
+                        breakline = 0;
+                    }
+                   breakline++;
+                   Console.WriteLine(i + " : " + checkMod(i) + "= " + sumA);
                 }
             }
         }
