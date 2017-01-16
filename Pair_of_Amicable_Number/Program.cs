@@ -13,10 +13,10 @@ namespace Pair_of_Amicable_Number
 
             /* You can set unlimited number */
             Console.WriteLine("\n\t:::::::LONG RESULT AS DETAIL:::::::\n");
-            Mathsblib.Amicable2(1, 50000); //For long result for detail;
+            Mathsblib.Amicable2(1, 90000); //For long result for detail;
 
             Console.WriteLine("\n\t:::::::SHORT RESULT:::::::\n");
-            Mathsblib.Amicable(1, 50000); //For short answer;
+            Mathsblib.Amicable(1, 90000); //For short answer;
 
             /* Get smalllest number only less than or equal to 10000 */
             //Mathsblib.GetAmicable(10000);

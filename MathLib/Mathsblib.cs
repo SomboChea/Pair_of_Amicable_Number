@@ -118,41 +118,38 @@ namespace MathLib
         //Method for Amicable Numebr use WHILE LOOP and Show long result for detail;
         public static void Amicable2(int min, long max)
         {
-            int breakline = 0;
-            long sumA = 0, sumB = 0, j=1;
+            ArrayList arrTemp2 = new ArrayList();
+            checkDup check2 = new checkDup();
+
+            long sumA = 0, sumB = 0, j=1, temp = 0;
             for(int i = min; i <= max; i++)
             {
+                arrTemp2.Add(check2.getVal());
+                bool isNumberDup = check2.Dup(i, arrTemp2);
+                if (isNumberDup == true)
+                    goto over_around;
                 sumA = 0;
                 sumB = 0;
 
-                while (j < i)
-                {
-                    if (i % j == 0)
-                        sumA += j;
-                    j++;
-                }
-
-                j = 1;
-                while (j < sumA)
-                {
-                    if (sumA % j == 0)
-                        sumB += j;
-                    j++;
-                }
+                sumA = Modulo(1, i);
+                sumB = Modulo(1, sumA);
 
                 if (i == sumA)
                     continue;
                 
                 if (i == sumB)
                 {
-                    if (breakline==2)
+                    if (temp == i)
+                        continue;
+                    else
                     {
-                        Console.Write("\n");
-                        breakline = 0;
+                        check2.setVal(sumA);
+                        temp = sumA;
+                        Console.WriteLine(i + " : " + checkMod(i) + " = " + sumA);
+                        Console.WriteLine(sumA + " : " + checkMod(toInt(sumA+"")) + " = " + i + "\n");
                     }
-                   breakline++;
-                   Console.WriteLine(i + " : " + checkMod(i) + "= " + sumA);
                 }
+            over_around:;
             }
         }
 
@@ -195,6 +192,14 @@ namespace MathLib
             return sum;
         }
         //End Method Amicable and ModAmicable Number;
+
+        //Covert all string to integer;
+        public static int toInt(string integer)
+        {
+            int getInt = 0;
+            getInt = int.Parse(integer);
+            return getInt;
+        }
 
     } //End Mathsblib class;
 
