@@ -11,14 +11,15 @@ namespace Pair_of_Amicable_Number
             //Min = 1 ; Max = 10000;
             //Run Method from Mathlib.dll (Class library)
 
-            Console.WriteLine("\n\t:::::::LONG RESULT AS DETAIL:::::::\n");
-            Mathsblib.Amicable2(1, 10000); //For long result for detail;
+            //Console.WriteLine("\n\t:::::::LONG RESULT AS DETAIL:::::::\n");
+            //Mathsblib.Amicable2(1, 90000); //For long result for detail;
 
-            Console.WriteLine("\n\t:::::::SHORT RESULT:::::::\n");
-            Mathsblib.Amicable(1, 10000); //For short answer;
-            
-            
-            //Console.WriteLine("Done...");
+            //Console.WriteLine("\n\t:::::::SHORT RESULT:::::::\n");
+            //Mathsblib.Amicable(1, 100000); //For short answer;
+
+            Mathsblib.GetAmicable(10000);
+            Console.WriteLine("Done...");
+
             //You can call it as object;
             /*
              Mathsblib mathlib = new Mathsblib();
